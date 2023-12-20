@@ -1,0 +1,132 @@
+git init: Initializes a new Git repository in the current directory.
+git clone <repository_url>: Creates a copy of a remote repository on your local machine.
+git add <file>: Stages changes for commit.
+git commit -m "message": Commits staged changes to the repository with a descriptive message.
+git status: Shows the status of your working directory, including staged and untracked files.
+git log: Displays a commit history.
+git diff: Shows the differences between your working directory and the last commit.
+git branch: Lists all branches in the repository.
+git checkout <branch>: Switches to the specified branch.
+git checkout -b <new_branch>: Creates and switches to a new branch.
+git merge <branch>: Merges changes from one branch into the current branch.
+git pull: Fetches changes from a remote repository and merges them into the current branch.
+git push: Pushes local commits to a remote repository.
+git remote: Lists remote repositories connected to your local repository.
+git fetch: Fetches changes from a remote repository but does not merge them.
+git stash: Temporarily saves changes that are not ready for commit.
+git tag: Lists and manages tags (used for versioning).
+git reset: Unstages changes or moves the HEAD to a specific commit.
+git rebase: Reapplies commits from one branch onto another.
+git blame <file>: Shows who last modified each line in a file.
+These are some of the most commonly used Git commands, but there are many more Git commands and options available for more advanced use cases. You can explore these commands in more detail by using the git --help command or by referring to the official Git documentation.
+
+User
+give a  list of 100 git commands 
+ChatGPT
+Certainly! Here is a list of 100 Git commands and Git-related actions:
+
+Repository Setup and Configuration:
+
+git init: Initialize a new Git repository.
+git clone <repository_url>: Clone a remote repository to your local machine.
+git config --global user.name "Your Name": Set your global username.
+git config --global user.email "your.email@example.com": Set your global email.
+git config --list: List Git configuration settings.
+git help <command>: Get help for a specific Git command.
+git version: Display the installed Git version.
+Basic Workflow:
+
+git add <file>: Add changes from the working directory to the staging area.
+git commit -m "Commit message": Commit staged changes with a message.
+git status: Show the status of your working directory.
+git diff: Display the differences between the working directory and the last commit.
+git log: View commit history.
+git log --oneline: View a condensed commit history.
+git show <commit_id>: Show details of a specific commit.
+git blame <file>: Show who last modified each line in a file.
+git ignore <file>: Add files or patterns to the .gitignore file.
+git mv <old_file> <new_file>: Rename a file in Git.
+Branching and Merging:
+
+git branch: List all branches in the repository.
+git branch <branch_name>: Create a new branch.
+git checkout <branch_name>: Switch to a different branch.
+git checkout -b <new_branch>: Create and switch to a new branch in one command.
+git merge <branch_name>: Merge changes from one branch into the current branch.
+git rebase <branch_name>: Reapply commits from one branch onto another.
+git branch -d <branch_name>: Delete a branch.
+git stash: Temporarily save changes that are not ready for commit.
+git stash pop: Apply the most recently stashed changes.
+git stash list: List all stashes.
+git cherry-pick <commit_id>: Apply a specific commit to the current branch.
+Remote Repositories:
+
+git remote: List remote repositories.
+git remote -v: List remote repositories with URLs.
+git remote add <name> <url>: Add a new remote repository.
+git remote remove <name>: Remove a remote repository.
+git fetch <remote>: Fetch changes from a remote repository.
+git pull <remote> <branch>: Fetch and merge changes from a remote branch.
+git push <remote> <branch>: Push local commits to a remote branch.
+git push -u <remote> <branch>: Set the upstream branch for the current branch.
+git pull --rebase <remote> <branch>: Fetch and rebase changes from a remote branch.
+git remote show <remote>: Show information about a remote repository.
+Undoing Changes:
+
+git reset <file>: Unstage changes for a file.
+git reset: Reset the current branch to a specific commit.
+git revert <commit_id>: Create a new commit that undoes changes from a specific commit.
+git clean -n: List untracked files that can be removed.
+git clean -f: Remove untracked files and directories.
+Advanced Operations:
+
+git cherry-pick -x <commit_id>: Cherry-pick a commit and keep the original author's name.
+git bisect start: Start a binary search for a specific commit.
+git bisect bad: Mark the current commit as bad during a bisect.
+git bisect good <commit_id>: Mark a commit as good during a bisect.
+git bisect reset: End the bisect session.
+git reflog: View a reference log of all branch updates.
+git submodule init: Initialize submodules in a repository.
+git submodule update: Update submodules to the latest commit.
+git blame -L <start>,<end> <file>: Show blame for specific lines in a file.
+git log --graph --oneline --all: Display a graph of branch history.
+git remote prune <remote>: Remove remote branches that no longer exist.
+Tagging and Releases:
+
+git tag: List tags in the repository.
+git tag <tag_name>: Create a new lightweight tag.
+git tag -a <tag_name> -m "Tag message": Create an annotated tag with a message.
+git push <remote> --tags: Push tags to a remote repository.
+git tag -d <tag_name>: Delete a tag locally.
+git push <remote> :refs/tags/<tag_name>: Delete a tag on a remote repository.
+git describe <commit_id>: Describe the closest tag to a specific commit.
+Git Configuration:
+
+git config --global alias.<alias_name> "<command>": Create a Git alias.
+git config --global core.editor "editor_command": Set the default text editor for commit messages.
+git config --global color.ui auto: Enable colored output in Git.
+Git Hooks:
+
+Git hooks are scripts that can be placed in the .git/hooks directory to run custom actions on specific Git events (e.g., pre-commit, post-commit, pre-push).
+Working with Remotes:
+
+git remote rename <old_name> <new_name>: Rename a remote.
+git remote set-url <remote_name> <new_url>: Change the URL of a remote.
+git remote -v: List remote repositories with their URLs.
+git fetch --all: Fetch all changes from all remotes.
+Subversion (SVN) Bridge Commands:
+
+git svn clone <svn_repository_url>: Clone an SVN repository using Git.
+git svn fetch: Fetch changes from an SVN repository.
+git svn dcommit: Commit Git changes to an SVN repository.
+git svn rebase: Rebase Git changes on top of SVN changes.
+Git Worktrees:
+
+git worktree add <path> <branch_name>: Create a new worktree for a different branch.
+git worktree list: List all linked worktrees.
+git worktree prune: Prune stale worktrees.
+Git Large File Storage (LFS):
+
+git lfs install: Install Git LFS support in a repository.
+git lfs track <pattern>: Start tracking large files with Git LFS.
+git lfs untrack <pattern>: Stop tracking large files with Git 
